@@ -1,0 +1,10 @@
+python -m venv venv
+pip install django
+django-admin startproject ecommerce
+cd ecommerce
+python manage.py startapp shop
+rename the 1st ecommerce folder into src (optional)
+python manage.py migrate 
+python manage.py makemigrations
+python manage.py migrate 
+python manage.py createsuperuser
